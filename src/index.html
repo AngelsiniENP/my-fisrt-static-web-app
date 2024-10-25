@@ -1,17 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lui-G</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
 </head>
-
 <body>
-  <main>
-    <h1>ESTO NO SE PARA QUE ES PERO BUENO</h1>
-  </main>
-</body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#artista">Artista</a></li>
+                <li><a href="#musica">Música</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#lugar">Lugar</a></li>
+                <li><a href="#boleteria">Boletería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
 
+            <a href="https://www.youtube.com/@Luigi21Plus">
+            <img src="assets/image/logo-YT.png" alt="logo-YT"  class="img-IZ">
+            </a>
+            <div class="buscar">
+                <input type="search" id="" name="buscar" placeholder="Buscar" style="border-radius: 4px;">
+            </div>
+        </nav>
+    </header>
+        
+    <!-- Información del artista -->
+    
+    <div class="contenedor" id="artista">
+        <h1>
+             Información del artista
+        </h1>
+        <p>
+            Hiram David Santos Rojas, conocido en el ámbito musical como Lui-G 21 Plus es un cantante y compositor puertorriqueño. Nació el 27 de abril de 1977 en Rio Piedras, Puerto Rico. Se distingue por sus letras enfocadas hacia el sexo, por lo que el considera que su música solo debe ser escuchada por mayores de edad.
+        </p>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xYC0V9xixP8?si=okcoYBLxoIhRIY9m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border: 4px;"></iframe>
+        </div>
+    </div>
+
+    <!-- Música -->
+
+     <section class="contenedor-2" id="musica">
+        <div >
+            <h2>
+                Música
+            </h2>
+            <div class="audio">
+                <audio controls src="assets/audio/Audio.mp3"></audio>
+            </div>
+         </div>
+     </section>
+
+    <!-- Galeria de imágenes -->
+
+    <section class="imagenes" id="galeria">
+        <div>
+            <h2>
+                Galeria de imágenes
+            </h2>
+        </div>
+     <!-- Imágen #1 -->
+        <div class="img-l">
+            <div>
+                <img src="assets/image/imagen1.jpg" alt="">
+            </div>
+            <!-- Imágen #2 -->
+            <div>
+                <img src="assets/image/imagen2.jpg" alt="">
+            </div>
+            <!-- Imágen 3 -->
+            <div>
+                <img src="assets/image/imagen3.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Información del lugar -->
+
+     <section class="inf-lugar" id="lugar">
+        <h2>Información del lugar</h2>
+        <p>
+            El concierto se realizará en el Estadio Atanasio Girardot, Medellín.
+        </p>
+        <h3>Como llegar</h3>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.052861481524!2d-75.59275318871438!3d6.2567669937056465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44290e4f870f69%3A0xf57f97b59ef52c39!2sEstadio%20de%20F%C3%BAtbol%20Atanasio%20Girardot!5e0!3m2!1ses!2sco!4v1729741620265!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+     </section>
+
+     <!-- Información de boleteria -->
+
+      <section class="tabla" id="boleteria">
+        <h2>Información de Boletería</h2>
+        <div>
+            <table>
+                <thead>
+                    <th>Sector</th>
+                    <th>Precio</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>VIP</td>
+                        <td>200,000</td>
+                    </tr>
+                    <tr>
+                        <td>Preferencial</td>
+                        <td>150,000</td>
+                    </tr>
+                    <tr>
+                        <td>General</td>
+                        <td>100,000</td>
+                    </tr>
+                </tbody>
+    
+            </table>
+        </div>
+      </section>
+
+      <!-- Contactanos -->
+
+      <section class="contacto" id="contacto">
+        <h2>Contacto</h2>
+        <form action="">
+            <div>
+                <p>Nombre:</p>
+                <input type="text" name="nombre" required>
+                <p>Correo Eléctronico:</p>
+                <input type="email" name="email" required>
+                <p>Mensaje:</p>
+                <textarea name="mensaje" id=""></textarea>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+        </section>
+
+        <!-- Info -->
+         <footer>
+            <div class="logos">
+                <a href="https://www.facebook.com/share/1AVAEyZSPA/">
+                <img src="assets/image/facebook.png" alt="">
+                </a>
+                <a href="https://www.instagram.com/explore/locations/182478659236967/estadio-atanasio-girardot-medellin-colombia/">
+                <img src="assets/image/ig.png" alt="">
+                </a>
+                <img src="assets/image/x.png" alt="">
+            </div>         
+            <p>&copy; 2024 Concierto Atanasio Girardot. Todos los derechos reservados</p>
+         </footer>
+</body>
 </html>
